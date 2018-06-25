@@ -1,0 +1,6 @@
+Options -MultiViews
+RewriteEngine ON
+#RewriteBAse /path/to/app
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
